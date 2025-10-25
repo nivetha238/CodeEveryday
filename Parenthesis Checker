@@ -1,0 +1,15 @@
+
+public class Solution{
+    public static boolean isBalanced(String s){
+        while(s.contains("()")||s.contains("{}")||s.contains("[]")){
+            s=s.replace("()","").replace("{}","").replace("[]","");}
+            return s.isEmpty();
+        
+    }
+        public static void main(String[]args){
+            String s="({[})";
+            Solution sol=new Solution();
+            System.out.println(sol.isBalanced(s));
+        }
+    }
+    
