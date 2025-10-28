@@ -1,0 +1,23 @@
+class Solution {
+    public static int getSecondLargest(int[] arr) {
+       if(arr.length<2){
+           return -1;}
+           int first=-1;
+           int second =-1;
+           for(int num:arr){
+               if(num>first){
+               second=first;
+                   first=num;
+               }
+               else if(num<first && num>second){
+                   second = num;
+                   }
+           }
+           return second;}
+           public static void main(String[]args){
+               int[] arr={12, 35, 1, 10, 34, 1};
+               System.out.println(getSecondLargest(arr));
+                   
+               }
+           }
+               
