@@ -1,0 +1,15 @@
+import java.util.*;
+public class main{
+    public static void main(String[]args){
+        int []arr={1,4,5,5,6,6};
+           int target=9;
+        Map<Integer,Integer>map=new HashMap<>();
+        for(int i=0;i<arr.length;i++){
+            int n=target-arr[i];
+            if(map.containsKey(n)){
+                System.out.println("["+map.get(n)+" "+i+"]");
+                break;
+            }
+            map.put(arr[i],i);
+        }}}
+        
